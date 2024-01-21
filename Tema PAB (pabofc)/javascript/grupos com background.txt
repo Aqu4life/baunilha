@@ -1,0 +1,1 @@
+$(function(){var groups=$('.legend');if(groups){for(var a=groups.find('a.gensmall'),i=0,j=a.length,rgb,color;i<j;i++){color=a[i].style.color;rgb=color.replace(/rgb\(|\)|\s/g,'').split(',');a[i].style.backgroundColor=color;a[i].style.color=Math.round(((parseInt(rgb[0])*299)+(parseInt(rgb[1])*587)+(parseInt(rgb[2])*114))/1000)>125?'#FFF':'#FFF'}}});
